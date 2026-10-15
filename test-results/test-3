@@ -1,0 +1,311 @@
+Benchmark Results Report
+================================================================================
+Timestamp:              2026-05-27T12:36:05.897Z
+
+MACHINE STATISTICS
+--------------------------------------------------------------------------------
+Platform:               linux
+Architecture:           x64
+CPU Model:              AMD Ryzen 7 8840HS w/ Radeon 780M Graphics
+CPU Cores:              16
+Total Memory:           14.91 GB
+Free Memory:            6.15 GB
+Node Version:           v22.22.3
+Vite Version:           ^7.1.11
+Vitest Version:         ^4.1.3
+
+BENCHMARK RESULTS
+================================================================================
+
+Test: 1x1000 verifications, no warmup
+--------------------------------------------------------------------------------
+  Iterations:           1000
+  Mean:                 11.300 ms
+  Median:               11.176 ms
+  Min:                  10.559 ms
+  Max:                  14.986 ms
+  Std Dev:              0.474 ms
+  Variance:             0.225 ms²
+  Coefficient of Var:   4.19%
+
+  10 Fastest Runs:
+    [1] Run #236: 10.559 ms
+    [2] Run #842: 10.656 ms
+    [3] Run #839: 10.668 ms
+    [4] Run #147: 10.801 ms
+    [5] Run #413: 10.847 ms
+    [6] Run #476: 10.864 ms
+    [7] Run #59: 10.899 ms
+    [8] Run #243: 10.914 ms
+    [9] Run #843: 10.916 ms
+    [10] Run #158: 10.918 ms
+
+  10 Slowest Runs:
+    [1] Run #1: 14.986 ms
+    [2] Run #4: 13.895 ms
+    [3] Run #73: 13.611 ms
+    [4] Run #340: 13.606 ms
+    [5] Run #481: 13.474 ms
+    [6] Run #251: 13.469 ms
+    [7] Run #828: 13.443 ms
+    [8] Run #740: 13.435 ms
+    [9] Run #517: 13.414 ms
+    [10] Run #607: 13.401 ms
+
+Test: 1x1000 verifications, with warmup
+--------------------------------------------------------------------------------
+  Iterations:           1000
+  Mean:                 11.440 ms
+  Median:               11.303 ms
+  Min:                  10.805 ms
+  Max:                  14.621 ms
+  Std Dev:              0.489 ms
+  Variance:             0.239 ms²
+  Coefficient of Var:   4.27%
+
+  10 Fastest Runs:
+    [1] Run #168: 10.805 ms
+    [2] Run #228: 10.930 ms
+    [3] Run #230: 10.981 ms
+    [4] Run #797: 11.033 ms
+    [5] Run #459: 11.049 ms
+    [6] Run #620: 11.051 ms
+    [7] Run #231: 11.075 ms
+    [8] Run #446: 11.075 ms
+    [9] Run #56: 11.080 ms
+    [10] Run #344: 11.082 ms
+
+  10 Slowest Runs:
+    [1] Run #923: 14.621 ms
+    [2] Run #920: 14.051 ms
+    [3] Run #703: 14.016 ms
+    [4] Run #924: 13.957 ms
+    [5] Run #262: 13.836 ms
+    [6] Run #919: 13.789 ms
+    [7] Run #619: 13.509 ms
+    [8] Run #130: 13.501 ms
+    [9] Run #306: 13.451 ms
+    [10] Run #394: 13.450 ms
+
+Test: 1x10000 verifications, no warmup
+--------------------------------------------------------------------------------
+  Iterations:           10000
+  Mean:                 11.633 ms
+  Median:               11.511 ms
+  Min:                  10.750 ms
+  Max:                  19.742 ms
+  Std Dev:              0.491 ms
+  Variance:             0.241 ms²
+  Coefficient of Var:   4.22%
+
+  10 Fastest Runs:
+    [1] Run #4466: 10.750 ms
+    [2] Run #2536: 10.751 ms
+    [3] Run #365: 10.805 ms
+    [4] Run #9331: 10.825 ms
+    [5] Run #6178: 10.883 ms
+    [6] Run #368: 10.896 ms
+    [7] Run #6353: 10.897 ms
+    [8] Run #5285: 10.898 ms
+    [9] Run #400: 10.907 ms
+    [10] Run #6349: 10.931 ms
+
+  10 Slowest Runs:
+    [1] Run #3202: 19.742 ms
+    [2] Run #3482: 19.656 ms
+    [3] Run #7066: 18.243 ms
+    [4] Run #3483: 18.016 ms
+    [5] Run #9448: 16.975 ms
+    [6] Run #2006: 16.006 ms
+    [7] Run #6219: 15.591 ms
+    [8] Run #1746: 15.389 ms
+    [9] Run #7333: 15.186 ms
+    [10] Run #4425: 15.167 ms
+
+Test: 1x10000 verifications, with warmup
+--------------------------------------------------------------------------------
+  Iterations:           10000
+  Mean:                 11.685 ms
+  Median:               11.552 ms
+  Min:                  10.805 ms
+  Max:                  18.692 ms
+  Std Dev:              0.483 ms
+  Variance:             0.233 ms²
+  Coefficient of Var:   4.13%
+
+  10 Fastest Runs:
+    [1] Run #6549: 10.805 ms
+    [2] Run #5141: 10.818 ms
+    [3] Run #6147: 10.851 ms
+    [4] Run #5000: 10.870 ms
+    [5] Run #5243: 10.882 ms
+    [6] Run #3620: 10.898 ms
+    [7] Run #1511: 10.911 ms
+    [8] Run #9337: 10.924 ms
+    [9] Run #64: 10.930 ms
+    [10] Run #3360: 10.931 ms
+
+  10 Slowest Runs:
+    [1] Run #9599: 18.692 ms
+    [2] Run #2849: 18.257 ms
+    [3] Run #2422: 17.524 ms
+    [4] Run #3830: 17.480 ms
+    [5] Run #3827: 16.758 ms
+    [6] Run #2583: 16.611 ms
+    [7] Run #3828: 16.412 ms
+    [8] Run #9598: 16.280 ms
+    [9] Run #286: 15.937 ms
+    [10] Run #3909: 15.333 ms
+
+Test: 100x100 verifications, no warmup
+--------------------------------------------------------------------------------
+  Iterations:           100
+  Mean:                 1181.721 ms
+  Median:               1178.865 ms
+  Min:                  1170.983 ms
+  Max:                  1296.088 ms
+  Std Dev:              16.192 ms
+  Variance:             262.196 ms²
+  Coefficient of Var:   1.37%
+
+  10 Fastest Runs:
+    [1] Run #100: 1170.983 ms
+    [2] Run #86: 1171.912 ms
+    [3] Run #98: 1172.317 ms
+    [4] Run #94: 1172.353 ms
+    [5] Run #82: 1172.529 ms
+    [6] Run #54: 1172.682 ms
+    [7] Run #5: 1172.716 ms
+    [8] Run #14: 1172.794 ms
+    [9] Run #92: 1172.930 ms
+    [10] Run #79: 1172.987 ms
+
+  10 Slowest Runs:
+    [1] Run #43: 1296.088 ms
+    [2] Run #44: 1276.667 ms
+    [3] Run #2: 1208.284 ms
+    [4] Run #3: 1202.959 ms
+    [5] Run #45: 1195.007 ms
+    [6] Run #29: 1193.058 ms
+    [7] Run #64: 1188.266 ms
+    [8] Run #46: 1187.173 ms
+    [9] Run #30: 1187.136 ms
+    [10] Run #31: 1186.992 ms
+
+Test: 100x100 verifications, with warmup
+--------------------------------------------------------------------------------
+  Iterations:           100
+  Mean:                 1179.272 ms
+  Median:               1176.401 ms
+  Min:                  1164.068 ms
+  Max:                  1300.807 ms
+  Std Dev:              15.979 ms
+  Variance:             255.335 ms²
+  Coefficient of Var:   1.36%
+
+  10 Fastest Runs:
+    [1] Run #100: 1164.068 ms
+    [2] Run #67: 1164.538 ms
+    [3] Run #88: 1165.284 ms
+    [4] Run #72: 1165.313 ms
+    [5] Run #90: 1165.514 ms
+    [6] Run #89: 1165.831 ms
+    [7] Run #87: 1166.547 ms
+    [8] Run #91: 1166.704 ms
+    [9] Run #61: 1167.174 ms
+    [10] Run #85: 1167.199 ms
+
+  10 Slowest Runs:
+    [1] Run #42: 1300.807 ms
+    [2] Run #4: 1225.387 ms
+    [3] Run #41: 1220.157 ms
+    [4] Run #68: 1209.006 ms
+    [5] Run #27: 1202.167 ms
+    [6] Run #35: 1192.315 ms
+    [7] Run #32: 1191.796 ms
+    [8] Run #43: 1190.810 ms
+    [9] Run #30: 1189.768 ms
+    [10] Run #5: 1188.986 ms
+
+Test: 100x1000 verifications, no warmup
+--------------------------------------------------------------------------------
+  Iterations:           100
+  Mean:                 11752.756 ms
+  Median:               11739.496 ms
+  Min:                  11592.272 ms
+  Max:                  12201.192 ms
+  Std Dev:              86.070 ms
+  Variance:             7408.082 ms²
+  Coefficient of Var:   0.73%
+
+  10 Fastest Runs:
+    [1] Run #63: 11592.272 ms
+    [2] Run #65: 11604.613 ms
+    [3] Run #62: 11609.800 ms
+    [4] Run #61: 11619.849 ms
+    [5] Run #60: 11624.899 ms
+    [6] Run #66: 11625.666 ms
+    [7] Run #67: 11644.108 ms
+    [8] Run #64: 11645.056 ms
+    [9] Run #59: 11655.431 ms
+    [10] Run #74: 11684.736 ms
+
+  10 Slowest Runs:
+    [1] Run #57: 12201.192 ms
+    [2] Run #88: 12001.099 ms
+    [3] Run #47: 11989.339 ms
+    [4] Run #36: 11948.954 ms
+    [5] Run #5: 11947.405 ms
+    [6] Run #78: 11941.870 ms
+    [7] Run #99: 11917.066 ms
+    [8] Run #82: 11882.665 ms
+    [9] Run #26: 11882.412 ms
+    [10] Run #15: 11866.506 ms
+
+Test: 100x1000 verifications, with warmup
+--------------------------------------------------------------------------------
+  Iterations:           100
+  Mean:                 11777.157 ms
+  Median:               11762.246 ms
+  Min:                  11672.475 ms
+  Max:                  12042.487 ms
+  Std Dev:              67.092 ms
+  Variance:             4501.304 ms²
+  Coefficient of Var:   0.57%
+
+  10 Fastest Runs:
+    [1] Run #48: 11672.475 ms
+    [2] Run #93: 11702.843 ms
+    [3] Run #7: 11705.327 ms
+    [4] Run #61: 11706.866 ms
+    [5] Run #85: 11707.211 ms
+    [6] Run #95: 11710.740 ms
+    [7] Run #75: 11711.854 ms
+    [8] Run #29: 11714.864 ms
+    [9] Run #92: 11718.339 ms
+    [10] Run #74: 11719.664 ms
+
+  10 Slowest Runs:
+    [1] Run #4: 12042.487 ms
+    [2] Run #77: 11983.398 ms
+    [3] Run #56: 11980.648 ms
+    [4] Run #35: 11962.905 ms
+    [5] Run #46: 11958.457 ms
+    [6] Run #87: 11948.004 ms
+    [7] Run #14: 11929.477 ms
+    [8] Run #98: 11929.049 ms
+    [9] Run #66: 11917.169 ms
+    [10] Run #25: 11897.578 ms
+
+SUMMARY TABLE
+================================================================================
+Test Name                                Mean (ms)       Std Dev      Min          Max         
+--------------------------------------------------------------------------------
+1x1000 verifications, no warmup          11.300          0.474        10.559       14.986
+1x1000 verifications, with warmup        11.440          0.489        10.805       14.621
+1x10000 verifications, no warmup         11.633          0.491        10.750       19.742
+1x10000 verifications, with warmup       11.685          0.483        10.805       18.692
+100x100 verifications, no warmup         1181.721        16.192       1170.983     1296.088
+100x100 verifications, with warmup       1179.272        15.979       1164.068     1300.807
+100x1000 verifications, no warmup        11752.756       86.070       11592.272    12201.192
+100x1000 verifications, with warmup      11777.157       67.092       11672.475    12042.487
